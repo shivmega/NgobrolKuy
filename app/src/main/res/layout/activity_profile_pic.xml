@@ -7,7 +7,7 @@
     android:background="@drawable/gradient_drawable"
     tools:context=".ProfilePicActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePic"
         android:layout_width="500px"
         android:layout_height="500px"
@@ -25,10 +25,13 @@
         app:layout_constraintEnd_toEndOf="@id/profilePic"
         app:layout_constraintBottom_toBottomOf="@id/profilePic"/>
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/btnEditPic"
+        android:clickable="true"
         android:layout_width="100px"
         android:layout_height="100px"
         android:src="@drawable/ic_baseline_edit_24"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintStart_toStartOf="@id/pinkCircle"
         app:layout_constraintEnd_toEndOf="@id/pinkCircle"
         app:layout_constraintTop_toTopOf="@id/pinkCircle"
@@ -75,6 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/btnPicChat"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
